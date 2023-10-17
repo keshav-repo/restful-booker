@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    server_name your_domain_or_server_ip;
+
+    location /auth {
+        proxy_pass http://localhost:3001/auth;
+    }
+
+    location /booking {
+        proxy_pass http://localhost:3001/booking;
+    }
+
+    # You can add additional location blocks for other endpoints if needed.
+
+    location / {
+        # Additional configuration for the root location if necessary.
+    }
+}

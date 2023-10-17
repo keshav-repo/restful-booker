@@ -1,0 +1,16 @@
+[Unit]
+Description=Booking Application
+After=network.target
+
+[Service]
+Type=simple
+User=nobody
+Group=docker
+WorkingDirectory=/var/www/restful-booker
+ExecStart=/root/.nvm/versions/node/v16.20.2/bin/node /var/www/restful-booker./bin/www
+Restart=always
+Environment=cross-env SEED=true
+
+[Install]
+WantedBy=multi-user.target
+
