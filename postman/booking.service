@@ -7,7 +7,7 @@ Type=simple
 User=nobody
 Group=docker
 WorkingDirectory=/var/www/restful-booker
-ExecStart=/root/.nvm/versions/node/v16.20.2/bin/node /var/www/restful-booker./bin/www
+ExecStart=/home/keshavnit16/.nvm/versions/node/v16.20.2/bin/node /var/www/restful-booker./bin/www
 Restart=always
 Environment=cross-env SEED=true
 

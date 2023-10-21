@@ -3,3 +3,4 @@
 .vscode/
 npm-debug.log
 .idea
+./postman/dev.postman_environment_cloud.json

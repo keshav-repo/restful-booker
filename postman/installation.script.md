@@ -18,7 +18,6 @@ nvm install 16
 
 git clone https://github.com/keshav-repo/restful-booker.git
 
-
 docker exec -it  bookerservice /bin/bash
 
 apt update
@@ -41,7 +40,18 @@ systemctl daemon-reload
 bash: systemctl: command not found
 apt-get install systemd
 
-systemctl enable booking.service 
+sudo systemctl enable booking.service 
+
+sudo chmod 664 
+
+sudo systemctl start booking.service 
+
+ps ef | grep node 
+
+nohup npm run start > output.log 2>&1 &
+
+
+newman run Booking2.postman_collection.json -e dev.postman_environment.json
 
 
 ```
@@ -62,5 +72,8 @@ docker run --name docker-nginx -p 80:80 nginx
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' docker-nginx
 ```
 
+#### Jenkins 
+
+docker run -it --name jenkinstest -p 3002:80 ubuntu /bin/bash
 
 
