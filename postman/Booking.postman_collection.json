@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "36e54024-c7e0-4979-b30c-34b73dd908ae",
+		"_postman_id": "e5bb8fe0-0075-4d63-9c07-c84e7609ebbb",
 		"name": "Booking",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2601330",
-		"_collection_link": "https://bold-meteor-728384.postman.co/workspace/test-workspace~f5777c09-da28-4d85-acfb-bcd788ae72b1/collection/2601330-36e54024-c7e0-4979-b30c-34b73dd908ae?action=share&source=collection_link&creator=2601330"
+		"_collection_link": "https://bold-meteor-728384.postman.co/workspace/test-workspace~f5777c09-da28-4d85-acfb-bcd788ae72b1/collection/2601330-e5bb8fe0-0075-4d63-9c07-c84e7609ebbb?action=share&source=collection_link&creator=2601330"
 	},
 	"item": [
 		{
@@ -89,41 +89,6 @@
 					],
 					"path": [
 						"booking"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "UPDATE BOOKING",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "Accept",
-						"value": "application/json"
-					},
-					{
-						"key": "Cookie",
-						"value": "token=c24a34da0a03d97"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}"
-				},
-				"url": {
-					"raw": "{{URL}}/booking/1",
-					"host": [
-						"{{URL}}"
-					],
-					"path": [
-						"booking",
-						"1"
 					]
 				}
 			},
