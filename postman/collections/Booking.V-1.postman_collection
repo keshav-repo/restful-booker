@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "e5bb8fe0-0075-4d63-9c07-c84e7609ebbb",
+		"_postman_id": "020fd2ef-58cf-4b5d-8913-ffaa0f144d61",
 		"name": "Booking",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2601330",
-		"_collection_link": "https://bold-meteor-728384.postman.co/workspace/test-workspace~f5777c09-da28-4d85-acfb-bcd788ae72b1/collection/2601330-e5bb8fe0-0075-4d63-9c07-c84e7609ebbb?action=share&source=collection_link&creator=2601330"
+		"_collection_link": "https://bold-meteor-728384.postman.co/workspace/test-workspace~f5777c09-da28-4d85-acfb-bcd788ae72b1/collection/2601330-020fd2ef-58cf-4b5d-8913-ffaa0f144d61?action=share&source=collection_link&creator=2601330"
 	},
 	"item": [
 		{
@@ -35,6 +35,19 @@
 		},
 		{
 			"name": "GET ALL BOOKINGS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -96,6 +109,19 @@
 		},
 		{
 			"name": "PARTIALLY UPDATE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "PATCH",
 				"header": [
@@ -131,6 +157,19 @@
 		},
 		{
 			"name": "DELETE API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [
