@@ -80,6 +80,14 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' doc
 
 #### Jenkins 
 
-docker run -it --name jenkinstest -p 3002:80 ubuntu /bin/bash
+docker run -it --name jenkinstest -p 8090:8080 ubuntu /bin/bash
+
+docker run --name jenkinsci -p 8080:8080 jenkins/jenkins:lts
+
+#### jenkins task
+ /var/jenkins_home/.nvm/versions/node/v16.20.2/bin/newman run postman/collections/Booking.V-1.postman_collection -e postman/env/dev.cloud.booker.v-1.postman_environment
+
+
+
 
 
