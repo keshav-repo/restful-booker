@@ -165,7 +165,7 @@
 					},
 					{
 						"key": "Cookie",
-						"value": "token=c24a34da0a03d97"
+						"value": "token={{TOKEN}}"
 					}
 				],
 				"body": {
@@ -173,13 +173,19 @@
 					"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\"\r\n}"
 				},
 				"url": {
-					"raw": "{{URL}}/booking/1",
+					"raw": "{{URL}}/booking/:ID",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"booking",
-						"1"
+						":ID"
+					],
+					"variable": [
+						{
+							"key": "ID",
+							"value": "{{newBookingId}}"
+						}
 					]
 				}
 			},
