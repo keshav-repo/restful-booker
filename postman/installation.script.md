@@ -27,7 +27,6 @@ service nginx status
 apt update
 apt install vim
 
-
 ## command to check ip address of running docker ubuntu container 
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' bookerservice
 
@@ -50,9 +49,16 @@ ps ef | grep node
 
 nohup npm run start > output.log 2>&1 &
 
-
 newman run Booking2.postman_collection.json -e dev.postman_environment.json
 
+
+sudo ln -s /home/keshavnit16/.nvm/versions/node/v16.20.2/bin/newman
+
+/home/keshavnit16/.nvm/versions/node/v16.20.2/bin/newman    
+
+sudo systemctl status jenkins
+
+newman run postman/Booking.postman_collection.json -e postman/dev.postman_environment.json
 
 ```
 
